@@ -11,7 +11,7 @@ $( document ).ready(function() {
 let dadSquad = {
                 dads:{
                 theJetsons: {id: "jetsons", cartoon: "The Jetsons", firstName: "George", lastName:"Jetson", 
-                    healthPoints: 15, attackPower: 25, counterAttackPower: 3, 
+                    healthPoints: 50, attackPower: 25, counterAttackPower: 15, 
                     image:"assets/images/jetson-george.jpg"},
                     
                 americanDad: {id: "americanDad", cartoon: "American Dad", firstName: "Stan", lastName:"Smith", 
@@ -253,7 +253,10 @@ function attackDefender() {
     }
     
     if(defeatedDads.length > 2) {
-        $("#attackResult").append("You are the best cartoon dad with three fingers!!!")
+        $("#defTitle").show();
+        $("#challengers").hide();
+        $("#defender").hide();
+        $("#attackResult").append(" You are the best cartoon dad with three fingers!!!")
     }
 
     attackCurrent += attackBase;
@@ -338,7 +341,10 @@ function resetGame(firsttime = false){
 // now that I have the function to create a "badge" for each character,
 // I need to create an event listner to initiate the function, if 
 // the player decides to hit the "PLAY" button
-$("#reset").click(resetGame); 
+$("#reset").click(function() {
+    location.reload();
+}); 
+
 $("#play").click(revealWarriors);
 
 
