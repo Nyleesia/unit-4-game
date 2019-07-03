@@ -246,13 +246,15 @@ function attackDefender() {
 
     if (hpHero <= 0) {
         heroDefeated();
+        $("#attack").hide();
     }
 
     if (hpAttacker <= 0) {
         defenderDefeated(defenderName);
     }
     
-    if(defeatedDads.length > 2) {
+    if(defeatedDads.length >= 3) {
+        $("#attack").hide();
         $("#defTitle").show();
         $("#challengers").hide();
         $("#defender").hide();
@@ -260,7 +262,6 @@ function attackDefender() {
     }
 
     attackCurrent += attackBase;
-
 
 }
 
