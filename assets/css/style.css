@@ -4,7 +4,6 @@ body{
     max-height: 850px;
 }
 
-
 #gameContainer {
     max-width: 960px;
     margin: auto;
@@ -86,6 +85,7 @@ body{
     font-family: 'Poiret One', cursive;
     font-weight:bold;
     text-align: center;
+    max-width: 200px;
 }
 
 #warriors {
@@ -204,15 +204,23 @@ body{
     height: 80%;
 }
 
+#defTitle h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+
 #defeated {
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 20px;
     padding: 20px;
     text-align: center;
+    justify-content: center;
     overflow: auto;
     white-space: nowrap;
+    height:25%;
 }
 
 #defeated .characters {
@@ -223,4 +231,5 @@ body{
     font-weight:bold;
     border-width: auto;
     height: 80%;
+    opacity: 0.5;
 }
