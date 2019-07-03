@@ -1,0 +1,128 @@
+<!-- things to remember/check for while developing this game:
+1. mobile first development
+2. load time (minification)
+3. fluid interactivity
+4. user experience
+5. user engagement
+6. color/style psychology
+7. developer brand (style, color, etc) 
+8. edge cases (what-ifs) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- font-awesome css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- developer appearance css -->
+    <link rel = "stylesheet" href = "assets/css/style.css">
+
+    <title>Dad Wars</title>
+</head>
+<body>
+ <!-- in the body I will need a background image -->
+ <!-- the theme is independence day (colors, flag, fireworks) -->
+
+
+
+
+ <!-- the play area has to be able to generate areas for:
+    choosing from all characters (choosing player "avatar") 
+    placing the chosen character
+    placing all other (enemy) characters
+    placing defender characters when chosen
+    developing the attack button
+    placing defeated enemies
+    I want all of these within a container div-->
+<div id= "gameContainer"> 
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-1">DAD WARS</h1>
+        <div><p class="lead">The cartoon have realized that they only have three fingers!
+            Man, are they angry and ready for a forth of July fight! </p></div>
+        
+            <div id="buttons">
+                <div><a class="btn btn-primary btn-md" href="#" role="button" id= "play">PLAY</a></div>
+                <div><a class="btn btn-primary btn-md" href="#" role="button" id= "reset">RESET</a></div>
+                <div> 
+                    <a class= "btn btn-primary btn-md" href="#" role="button"  id= "sound">SOUND   
+                        <img class="icon" src= "https://cdn3.iconfinder.com/data/icons/glypho-music-and-sound/64/music-note-sound-512.png" >
+                    </a>
+                </div>
+               </div>
+    </div>
+
+<div id="background">
+        <!-- div for revealing all characters -->
+        <div id="announcement"> <h1>  These Are The Fierce Warriors!</h1> 
+        </div>
+        <div class="jumbotron" id="warriors">
+            </div>
+         
+        <!-- div for instructions  -->
+        <div id="instructions">
+                Click On Any Dad To Be Your Hero!
+        </div>
+
+            
+            <div class="container" id="fightSpace" >    
+            
+                <div class="jumbotron" id="hero">
+                </div>
+                
+                <div id= "updates" >
+                 <!-- div for developing the attack button  -->
+                    
+                <button id="attack">ATTACK</button>
+                                            
+                <!-- div for updating hp, attack power, etc.-->
+                <div id="attackResult"></div>
+                </div>
+                
+                <!-- div for placing defender characters when chosen -->
+                <div class="jumbotron" id="defender">
+                </div>
+            </div>
+            <!-- div for placing all other (enemy) characters -->
+            <div class="jumbotron" id="challengers">
+            </div>
+            
+            <!-- div for placing defeated enemies -->
+            <footer>
+                   <div id="defTitle"> <h1>Defeated</h1></div>
+                <div class="jumbotron" id="defeated">
+                    </div>
+            </footer>      
+</div>
+
+
+
+
+
+
+
+
+
+<!-- developer javascript link to source -->
+<script src= "assets/javascript/game.js"></script>
+
+
+<!-- Optional JavaScript for bootstrap -->
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+<!-- then Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+crossorigin="anonymous"></script>
+<!-- then Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+crossorigin="anonymous"></script>
+</body>
+</html>
