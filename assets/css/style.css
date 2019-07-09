@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Khand|Monoton|Poiret+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Khand|Monoton|Poiret+One&display=swap');
 body{
     max-height: 850px;
 }
@@ -14,15 +13,15 @@ body{
 
 .jumbotron-fluid { 
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/897837/300/200/m1/fpnw/wm0/150703_-157520087-vector-grunge-american-flag-.jpg?1452588225&s=6cd903403bd0d745d495e22f03289a5d) no-repeat;
     background-size: cover;
     border: red dotted 3px;
-    height: 35%;
+    height: 25%;
     padding: 10px;
+    margin-bottom: 0px;
 
 }
 
@@ -33,7 +32,7 @@ body{
     font-weight: bolder;
 }
 
-.jumbotron .lead {
+.lead {
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
     text-align: center;
@@ -42,7 +41,7 @@ body{
     background-color: white; 
 }
 
-.hitPlay {
+#announcement {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
     text-align: center;
@@ -50,6 +49,91 @@ body{
     padding: 5px;
     background-color: white; 
     width: 100%;
+}
+
+#instructions{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    background-color: white; 
+    width: 100%;
+}
+
+#warriors {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    height: 25%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#challengers {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    height: 25%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#fightSpace {
+    border: 1px solid white;
+    display: flex; 
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center; 
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-items: center; 
+}
+
+.title {
+    font-family:  'Orbitron', sans-serif;
+    text-align: center;
+}
+
+#fightStats{
+    display: flex;
+    flex-wrap: wrap; 
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+
+}
+
+#stats {
+
+}
+
+#hero {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 25%;
+    height:80%;
+    text-align: center;
+
+}
+
+#hero .characters {
+    border: 1px solid blue;
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    border-width: auto;
+    height: 80%;
 }
 
 .jumbotron #buttons {
@@ -88,58 +172,18 @@ body{
     max-width: 200px;
 }
 
-#warriors {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    padding: 10px;
-    height: 25%;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-#fightSpace{
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 300px;
-    justify-items: center;
-    align-items: center; 
-}
-
-#hero {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 20px;
-    width: 25%;
-    height:80%;
-    text-align: center;
-}
-
-#hero .characters {
-    border: 1px solid blue;
-    margin: 15px;
-    padding: 10px;
-    font-family: 'Poiret One', cursive;
-    font-weight:bold;
-    border-width: auto;
-    height: 80%;
-}
-
 #attack{
     background-color: red; 
     color: white;
     border: red;
+    width: 100px;
+    height: 50px;
 }
 
 #updates{
     border: black dotted 1px;
-    width: 30%;
-    height: 80%;
+    width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -176,12 +220,25 @@ body{
     height: 80%;
 }
 
-#challengers {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    padding: 20px;
+#loserDad{
+    font-size: 15px;
+    font-weight: bolder; 
+    color: orangered; 
+    text-align: center;
+}
+
+.BOO{
+    font-size: 40px;
+    font-weight: bolder; 
+    color: red; 
+    text-align: center;
+}
+
+#congrats {
+    font-size: 40px;
+    font-weight: bolder; 
+    color: green; 
+    text-align: center;
 }
 
 #challengers .characters {
@@ -211,7 +268,7 @@ body{
 }
 
 #defeated {
-    border: 2px solid black;
+    border: 1px solid white;
     display: flex;
     flex-direction: row;
     margin: 20px;
